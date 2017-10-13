@@ -8,6 +8,7 @@ def initClient():
     client = docker.from_env()
 
 def listImages():
+    client.
     return client.images.list()
 
 def listContainers():

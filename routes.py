@@ -1,8 +1,6 @@
-from app import app
+from run import app, hs
 import dockerInterface
 
 @app.route('/')
-def helloWorld():
-    dockerInterface.initClient()
-    print(dockerInterface.listImages())
-    return dockerInterface.hello()
+def hello():
+    return hs.hello()

@@ -7,5 +7,7 @@ app = Flask(__name__)
 from routes import *
 hs = hostService.HostService()
 
+wsgi_app = app.wsgi_app
+
 if __name__ == "__main__":
     app.run()

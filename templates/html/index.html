@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Swampy</title>
+        <meta charset="utf-8" />
+        <script type=text/javascript src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="{{ url_for('indexJs') }}"></script>
+    </head>
+    <body>
+        <a href="{{ url_for('connectTest') }}">Hello Page</a>
+        <form id="clientConnect" name="clientConnect" action="Javascript:connectDockerClient(clientConnect)">
+            <h1>Docker Connect</h1>
+            <input id="clientConnectIp" name="ip" type="text" placeholder="IP Address">
+            <input id="clientConnectPort" name="port" type="text" placeholder="Port">
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

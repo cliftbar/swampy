@@ -15,5 +15,22 @@
             <input id="clientConnectPort" name="port" type="text" placeholder="Port">
             <button type="submit">Submit</button>
         </form>
+        <br>
+        <form id="createNewSwarm" name="createNewSwarm" action="Javascript:createNewSwarm()">
+            <h1>Create New Swarm</h1>
+            <input id="createNewSwarmIp" name="ip" type="text" placeholder="IP Address">
+            <input id="createNewSwarmPort" name="port" type="text" placeholder="Port">
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <form id="addWorkerToSwarm" name="addWorkerToSwarm" action="Javascript:addWorkerToSwarm()">
+            <h1>Add Worker To Swarm</h1>
+            <input id="addWorkerToSwarmIp" name="ip" type="text" placeholder="IP Address">
+            <input id="addWorkerToSwarmPort" name="port" type="text" placeholder="Port">
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <button onclick="Javascript:killSwarm()">Kill Swarm</button>
+        <button onclick="Javascript:printSwarmInfo()">Print Swarm Info</button>
     </body>
 </html>

@@ -1,0 +1,109 @@
+'{
+    "Version": {
+        "Index": 16
+    },
+    "CreatedAt": "2017-10-15T06:16:45.000634917Z",
+    "Spec": {
+        "Labels": {},
+        "Role": "worker",
+        "Availability": "active"
+    },
+    "Description": {
+        "Platform": {
+            "OS": "linux",
+            "Architecture": "x86_64"
+        },
+        "Hostname": "worker2",
+        "TLSInfo": {
+            "TrustRoot": "-----BEGIN CERTIFICATE-----\
+MIIBajCCARCgAwIBAgIUNIcE6yKrT3Ff/3S8iFurTbJrrn0wCgYIKoZIzj0EAwIw\
+EzERMA8GA1UEAxMIc3dhcm0tY2EwHhcNMTcxMDE1MDYxMjAwWhcNMzcxMDEwMDYx\
+MjAwWjATMREwDwYDVQQDEwhzd2FybS1jYTBZMBMGByqGSM49AgEGCCqGSM49AwEH\
+A0IABOQ4Xbo73QCNO48rll0To/Q2smXsOeikTyoLHvQepy9JFH9q09ppe24z9LSR\
+ToF9c3ntvUS+/MR8LIBE8q07HlSjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMB\
+Af8EBTADAQH/MB0GA1UdDgQWBBSVlm7kDUyFfhEEDqWcF7YsVXFU6DAKBggqhkjO\
+PQQDAgNIADBFAiEAl6Qw8A4Pzs02CWmKUUbrK/cBh60BQRY3Uu75DMpm8Q4CIGid\
+G3TDlICx1rcdqaFtUwrRMpZnz4COkTCwtGgJy55Z\
+-----END CERTIFICATE-----\
+",
+            "CertIssuerSubject": "MBMxETAPBgNVBAMTCHN3YXJtLWNh",
+            "CertIssuerPublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE5DhdujvdAI07jyuWXROj9DayZew56KRPKgse9B6nL0kUf2rT2ml7bjP0tJFOgX1zee29RL78xHwsgETyrTseVA=="
+        },
+        "Resources": {
+            "MemoryBytes": 2097434624,
+            "NanoCPUs": 1000000000
+        },
+        "Engine": {
+            "Plugins": [
+                {
+                    "Type": "Log",
+                    "Name": "awslogs"
+                },
+                {
+                    "Type": "Log",
+                    "Name": "fluentd"
+                },
+                {
+                    "Type": "Log",
+                    "Name": "gcplogs"
+                },
+                {
+                    "Type": "Log",
+                    "Name": "gelf"
+                },
+                {
+                    "Type": "Log",
+                    "Name": "journald"
+                },
+                {
+                    "Type": "Log",
+                    "Name": "json-file"
+                },
+                {
+                    "Type": "Log",
+                    "Name": "logentries"
+                },
+                {
+                    "Type": "Log",
+                    "Name": "splunk"
+                },
+                {
+                    "Type": "Log",
+                    "Name": "syslog"
+                },
+                {
+                    "Type": "Network",
+                    "Name": "bridge"
+                },
+                {
+                    "Type": "Network",
+                    "Name": "host"
+                },
+                {
+                    "Type": "Network",
+                    "Name": "macvlan"
+                },
+                {
+                    "Type": "Network",
+                    "Name": "null"
+                },
+                {
+                    "Type": "Network",
+                    "Name": "overlay"
+                },
+                {
+                    "Type": "Volume",
+                    "Name": "local"
+                }
+            ],
+            "EngineVersion": "17.09.0-ce"
+        }
+    },
+    "Status": {
+        "Addr": "192.168.1.250",
+        "State": "down",
+        "Message": "heartbeat failure"
+    },
+    "UpdatedAt": "2017-10-15T06:21:23.449005889Z",
+    "ID": "xwm5snlspbt3v3zszu2d972t3"
+}'

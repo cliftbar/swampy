@@ -1,0 +1,42 @@
+{
+    "TLSInfo": {
+        "CertIssuerSubject": "MBMxETAPBgNVBAMTCHN3YXJtLWNh"
+        , "CertIssuerPublicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2EbEz9+UpAX5iwuABJ/w+pHNroGSLn3WKBC2bGUSFQKle5nYaMGPg4gdgB4cjFtKpUEJU5GBURn30w1eW72rDQ=="
+        , "TrustRoot": "-----BEGIN CERTIFICATE-----\nMIIBajCCARCgAwIBAgIUSV8sAbv0SfXKpjG5RxbXouH3NlAwCgYIKoZIzj0EAwIw\nEzERMA8GA1UEAxMIc3dhcm0tY2EwHhcNMTcxMDE1MDQ0MjAwWhcNMzcxMDEwMDQ0\nMjAwWjATMREwDwYDVQQDEwhzd2FybS1jYTBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABNhGxM/flKQF+YsLgASf8PqRza6Bki591igQtmxlEhUCpXuZ2GjBj4OIHYAe\nHIxbSqVBCVORgVEZ99MNXlu9qw2jQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMB\nAf8EBTADAQH/MB0GA1UdDgQWBBRlpa8eqc61nwo5V1TcLTO9UsbeODAKBggqhkjO\nPQQDAgNIADBFAiEAt9gYW+pzshvrupVp3ZCJNHVl3KCsNoFtlUBXpKOQ7RsCIDss\nkTb+NIn5lZa12eWrN6H0kSbpp5ysdClrn3X/J5w3\n-----END CERTIFICATE-----\n"
+    }
+    , "CreatedAt": "2017-10-15T04:47:27.508545648Z"
+    , "ID": "qxle9lmek3pbzx9rzrjukp7je"
+    , "JoinTokens": {
+        "Manager": "SWMTKN-1-56ellpeomxjosdjaphf9qd1s7ntvt1d6gz19ykvhcbnx6qawze-323ichm7ms5ng484ku3i1tms6"
+        , "Worker": "SWMTKN-1-56ellpeomxjosdjaphf9qd1s7ntvt1d6gz19ykvhcbnx6qawze-1wax76ax3lp2n5zw2c2j4lcmf"
+    }
+    , "RootRotationInProgress": False
+    , "UpdatedAt": "2017-10-15T04:47:27.656927354Z"
+    , "Spec": {
+        "Raft": {
+            "LogEntriesForSlowFollowers": 500
+            , "SnapshotInterval": 10000
+            , "KeepOldSnapshots": 0
+            , "HeartbeatTick": 1
+            , "ElectionTick": 3
+        }
+        , "TaskDefaults": {}
+        , "Dispatcher": {
+            "HeartbeatPeriod": 5000000000
+        }
+        , "CAConfig": {
+            "NodeCertExpiry": 7776000000000000
+        }
+        , "EncryptionConfig": {
+            "AutoLockManagers": False
+        }
+        , "Labels": {}
+        , "Name": "default"
+        , "Orchestration": {
+            "TaskHistoryRetentionLimit": 5
+        }
+    }
+    , "Version": {
+        "Index": 10
+    }
+}

@@ -1,54 +1,30 @@
-function connectDockerClient(){
+function simplePost(urlIn, dataIn, successMsg = 'Success'){
     $.ajax({
         type: "POST"
-        ,url: "{{ url_for('connectTest') }}"
-        ,data: $('#clientConnect').serialize()
+        ,url: urlIn
+        ,data: dataIn
         ,success: function(data) {
-            console.log("success")
+            console.log(successMsg)
         }
     });
+}
+
+function connectDockerClient(){
+   simplePost("{{ url_for('connectTest') }}", $('#clientConnect').serialize(), "client connected")
 }
 
 function createNewSwarm(form){
-    $.ajax({
-        type: "POST"
-        ,url: "{{ url_for('createSwarm') }}"
-        ,data: $('#createNewSwarm').serialize()
-        ,success: function(data) {
-            console.log("created swarm")
-        }
-    });
+    simplePost("{{ url_for('createSwarm') }}", $('#createNewSwarm').serialize(), "swarm created")
 }
 
 function addWorkerToSwarm(){
-    $.ajax({
-        type: "POST"
-        ,url: "{{ url_for('addWorkerToSwarm') }}"
-        ,data: $('#addWorkerToSwarm').serialize()
-        ,success: function(data) {
-            console.log("added worker")
-        }
-    });
+    simplePost("{{ url_for('addWorkerToSwarm') }}", $('#addWorkerToSwarm').serialize(), "added worker")
 }
 
 function killSwarm(){
-    $.ajax({
-        type: "POST"
-        ,url: "{{ url_for('killSwarm') }}"
-        //,data: $('#addWorkerToSwarm').serialize()
-        ,success: function(data) {
-            console.log("swarm killed")
-        }
-    });
+    simplePost("{{ url_for('killSwarm') }}", $('#killSwarm').serialize(), "swarm killed")
 }
 
 function printSwarmInfo(){
-    $.ajax({
-        type: "POST"
-        ,url: "{{ url_for('printSwarmInfo') }}"
-        //,data: $('#addWorkerToSwarm').serialize()
-        ,success: function(data) {
-            console.log("swarm info printed")
-        }
-    });
+    simplePost("{{ url_for('printSwarmInfo') }}", $('#printSwarmInfo').serialize(), "swarm info printed")
 }

@@ -5,9 +5,17 @@ import flask as fl
 def index():
     return fl.render_template('html/index.html')
 
+@app.route('/reactVersion')
+def reactVersion():
+    return fl.render_template('html/reactVersion.html')
+
 @app.route('/indexJs.js')
 def indexJs():
     return fl.render_template('js/base.js')
+
+@app.route('/reactVersionJs.js')
+def reactVersionJs():
+    return fl.render_template('js/reactHostService.js')
 
 @app.route('/test/connectTest/', methods=['POST'])
 def connectTest():

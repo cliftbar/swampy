@@ -49,3 +49,5 @@ class HostService():
     def printSwarmInfo(self):
         print(json.dumps(self.swarmMaster["client"].swarm.attrs, indent=4))
         print(self.swarmMaster["client"].nodes.list())
+    
+    

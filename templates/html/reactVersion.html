@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Swampy React</title>
+        <meta charset="utf-8" />
+
+        
+    </head>
+    <body>
+        <!-- Application section -->
+        <div id='app'></div>
+
+        <!-- React JS -->
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <!-- React Script referenced with Flask -->
+        <!-- <script type="text/babel" src="{{ url_for('static', filename='js/reactHostService.js') }}"></script> -->
+        <script type="text/babel" src="{{ url_for('reactVersionJs') }}"></script>
+    </body>
+</html>

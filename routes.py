@@ -17,6 +17,13 @@ def indexJs():
 def reactVersionJs():
     return fl.render_template('js/reactHostService.js')
 
+@app.route('/printTest', methods=['POST'])
+def printTest():
+    print('printTest')
+    print(fl.request.form)
+    return 'Success'
+
+
 @app.route('/test/connectTest/', methods=['POST'])
 def connectTest():
     print("hello")
